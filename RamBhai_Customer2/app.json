@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "RAM BHAJI",
+    "slug": "VSMS",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/image.png",
+    "scheme": "vsms",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#EFF8EC",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "backgroundColor": "#EFF8EC",
+      "icon": "./assets/image.png"
+    },
+    "android": {
+      "userInterfaceStyle": "light",
+      "package": "com.p_m.VSMS",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/image.png",
+        "backgroundColor": "#EFF8EC"
+      }
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/image.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-system-ui",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#EFF8EC"
+        }
+      ],
+      "expo-secure-store",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "950c4635-6bb8-4efd-8a1b-1ff5d126a90b"
+      }
+    }
+  }
+}
