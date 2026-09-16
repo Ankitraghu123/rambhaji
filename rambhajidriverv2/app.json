@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Ram Bhaji Driver",
+    "slug": "ghartak-driver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/images/logo.png",
+    "scheme": "rambhaji",
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF6F0"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rambhaji.driver",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Ram Bhaji needs your location to verify delivery addresses.",
+        "NSCameraUsageDescription": "Ram Bhaji needs camera access to capture delivery proof photos."
+      }
+    },
+    "android": {
+      "package": "com.rambhaji.driver",
+      "newArchEnabled": true,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "VIBRATE",
+        "RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Ram Bhaji to use your location for delivery verification."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Ram Bhaji to access your camera for delivery photo proof."
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f835da62-6647-4ceb-901b-4067c6b1fc0c"
+      }
+    }
+  }
+}
